@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>برای شقایق 🌸</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>سلام شقایق عزیزم 🌸</h1>
+    <div id="days-counter" class="counter-box"></div>
+    <p class="love-message"> یه هدیهه کوچک برای کسی که انگیزه  زندگی من هست  💖</p>
+
+    <audio controls autoplay loop>
+      <source src="music.mp3" type="audio/mpeg">
+      مرورگرت موزیک رو پشتیبانی نمی‌کنه 🥲
+    </audio>
+
+    <section>
+      <h2>یادداشت‌های عاشقانه‌مون ✍️</h2>
+      <textarea id="note-input" placeholder="یه جمله قشنگ بنویس..."></textarea><br/>
+      <button onclick="addNote()">ثبت یادداشت</button>
+      <ul id="note-list"></ul>
+    </section>
+
+    <section class="secret">
+      <h2>پیام مخفی 🗝️</h2>
+      <button onclick="revealSecret()">نمایش پیام</button>
+      <p id="secret-message" style="display: none;">دوستت دارم بیشتر از هرچیزی توی دنیا 💕</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
