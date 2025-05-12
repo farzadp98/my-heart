@@ -41,6 +41,18 @@ function addNote() {
     const counterElement = document.getElementById("days-counter");
     counterElement.innerHTML = `ما ${diffDays} روزه کنار همیم 💖`;
   }
+function createFloatingHeart() {
+  const heart = document.createElement("div");
+  heart.className = "floating-heart";
+  heart.style.left = Math.random() * 100 + "vw";
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 4000);
+}
+
+setInterval(createFloatingHeart, 800);
   
   window.onload = function () {
     loadNotes();
