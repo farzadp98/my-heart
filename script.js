@@ -58,4 +58,8 @@ setInterval(createFloatingHeart, 800);
     loadNotes();
     calculateDaysTogether();
   };
+window.addEventListener('click', () => {
+  document.getElementById("bg-music").play().catch(() => {});
+}, { once: true });
+
   
